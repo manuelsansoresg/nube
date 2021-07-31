@@ -1,0 +1,45 @@
+.btn-outline-gray{
+  border: 2px solid #6E6E6E !important;
+  background-color: transparent !important;
+  color: #6E6E6E !important;
+  border-radius: 0.45rem;
+  padding: 0.40rem 0.80rem !important;
+  webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.btn-outline-gray:hover{
+  border-color: #2980b9 !important;
+  background-color: transparent !important;
+  color: #2980b9 !important;
+}
+
+.btn-search{
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-rounded{
+  border-radius: 5rem;
+}
+
+.btn-consigue{
+  border: 2px solid #6E6E6E ;
+  background-color: transparent ;
+  color: #6E6E6E ;
+  border-radius: 0.45rem;
+}
+
+
+
+@include media-breakpoint-down(sm) {
+  .btn-rounded{
+    font-size: 8px;
+  }
+
+  .btn-sm-menu{
+    font-size: 8px;
+  }
+ 
+}

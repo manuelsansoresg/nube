@@ -1,0 +1,27 @@
+.listado{
+  /* background-color: #F2F2F2; */
+}
+
+
+@include media-breakpoint-down(sm) {
+  
+  
+  .list-user{
+    font-size: 9px;
+    button{
+     font-size: 6px;
+    }
+  }
+
+  .list-title{
+    font-size: 9px;
+    button{
+      font-size: 9px;
+      padding: 10px 20px;
+      .heart-small {
+        font-size: 5px;
+      }
+    }
+    
+  }
+}

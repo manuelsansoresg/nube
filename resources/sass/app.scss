@@ -1,0 +1,59 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import "./components/buttons";
+@import "./components/navbar";
+@import "./components/modal";
+@import "./components/register";
+@import "./components/fa";
+@import "./components/discover";
+@import "./components/heart";
+@import "./components/listado";
+@import "./components/footer";
+@import "./components/login";
+@import "./components/calendar";
+@import "./components/inputs";
+@import "./components/landing";
+
+.bg-gray{
+    background-color: $gray;
+  }
+  
+  .avatar{
+    width: 40px;
+    height: 40px;
+  }
+   
+  .pointer{
+    cursor: pointer;
+  }
+  
+  .link-profile{
+    cursor: pointer;
+  }
+  .link-profile:hover{
+    text-decoration: underline !important;
+  }
+  
+  .hr-home{
+    margin-top: -1px;
+  }
+                          
+  .eye-show{
+    cursor: pointer;
+  }
+  
+  .icons-social{
+    font-size: 20px;
+  }
+  
+  @include media-breakpoint-down(sm) {
+    .eye-show{
+      font-size: 14px;
+    } 
+  }

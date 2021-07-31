@@ -1,0 +1,67 @@
+.title-welcome{
+    font-size: 1.575rem;
+}
+
+.nnuube-text{
+    color: #585858;
+     font-weight: 600;
+}
+
+/* .logo-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/img/nube.png') center;
+    background-size: cover;
+    width: 104%;
+    height: 233px;
+    font-size: 2em;
+    cursor: pointer;
+
+    &__text{
+        color: #E7E6E5;
+        margin-top: 49px;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+
+     &__text a{
+        color: #E7E6E5; 
+     }
+
+     
+
+} */
+
+.welcome-small{
+    color: #8B8B8C;
+    font-size: 10px;
+}
+
+.landing{
+    &__list{
+        color: #6B6B6C;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .landing{
+        &__title{
+            font-size: 1em;
+        }
+
+        &__subtitle{
+            font-size: 1em;
+        }
+        &__list{
+            font-size: 11px;
+        }
+    }
+    .title-welcome{
+        font-size: 1em;
+    }
+
+    .welcome-small{
+        font-size: 8px; 
+    }
+}

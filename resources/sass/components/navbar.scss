@@ -1,0 +1,15 @@
+.lbl-menu{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@include media-breakpoint-down(sm) {
+    .navbar-toggler {
+        padding: 0px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .lbl-menu{
+        font-size: 1.125rem;
+    }
+
+}

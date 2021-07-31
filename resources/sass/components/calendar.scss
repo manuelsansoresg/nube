@@ -1,0 +1,110 @@
+
+.calendarDay {
+    border: none;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.itenCalendar {
+    -ms-flex: 0 0 14.285714285%;
+    flex: 0 0 14.285714285%;
+    max-width: 14.285714285%;
+}
+
+.contentImgCalendar {
+    width: 100%;
+    padding-top: 14.068%;
+    /* 1:1 Aspect Ratio */
+    position: relative;
+    /* If you want text inside of it */
+}
+
+
+.contentImg {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+}
+
+.calendarHomer:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21) !important;
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21) !important;
+}
+
+.btnC {
+  width: 100%;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: $gray2;
+  background-color: $gray-light;
+}
+
+.border-red{
+    border: 1px solid red;
+}
+
+.dayCalendar {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: lighter;
+
+}
+
+.fullScreenPhoto {
+    width: 100% !important;
+}
+
+.font .text-lighter {
+  font-weight: lighter !important;
+  color: $gray2 !important;
+}
+
+#contentPhotoCalendar{
+  cursor: pointer;
+
+}
+
+#contentPhotoCalendar img{
+ width: 150px;
+  height: 150px;
+}
+
+.img-calendar{
+  width: 100%;
+}
+
+.modal-content-full .modal-body{
+  padding: 0px !important;
+}
+
+#fullScreenPhoto .modal-content {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none;
+}
+
+#fullScreenPhoto .modal-footer{
+  border: none;
+}
+
+#photo-full:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21) !important;
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21) !important;
+}
+
+#fullScreenPhoto .modal-content button {
+    color: #fff !important;
+}

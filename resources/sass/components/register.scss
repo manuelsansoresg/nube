@@ -1,0 +1,22 @@
+.register{
+  
+  min-height: 100%;
+
+  &__preview{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+#image_preview{
+  cursor: pointer;
+}
+
+@include media-breakpoint-down(sm) {
+  .register{
+    &__title{
+      font-size: 1.6em;
+    }
+  }
+}
