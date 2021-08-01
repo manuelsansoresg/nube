@@ -271,23 +271,23 @@ class User extends Authenticatable
     {
         $my_user = null;
         if(Auth::id() != null){
-            $my_user = User::select('users.id', 'biography', 'username','users.name', 'last_name', 'photo', 'users.photo', 'towns.name as name_town', 'states.name as name_state', 'heart',
+            $my_user = User::select('users.id', 'biography', 'username','users.name', 'last_name', 'photo', 'users.photo', 'heart',
                 DB::raw('(SELECT COUNT(user_id) from follow_user where (follow_user.user_id=users.id)) as follows '),
                 DB::raw('(SELECT COUNT(user_id) from follow_user where (follow_user.user_follow_id=users.id)) as follow_me '),
                 DB::raw('(SELECT user_id FROM follow_user WHERE user_id = '.$user_id.' and user_follow_id=users.id) as btn'))
                 ->where('users.id', $user_id)
-                ->join('states', 'states.id', '=', 'users.state_id')
-                ->join('towns', 'towns.id', '=', 'users.town_id')
+              /*   ->join('states', 'states.id', '=', 'users.state_id')
+                ->join('towns', 'towns.id', '=', 'users.town_id') */
                 ->join('profile_user', 'profile_user.user_id', '=', 'users.id')
                 ->first();
         }else{
 
-            $my_user = User::select('users.id', 'biography', 'username','users.name', 'last_name', 'photo', 'users.photo', 'towns.name as name_town', 'states.name as name_state', 'heart',
+            $my_user = User::select('users.id', 'biography', 'username','users.name', 'last_name', 'photo', 'users.photo', 'heart',
                 DB::raw('(SELECT COUNT(user_id) from follow_user where (follow_user.user_id=users.id)) as follows '),
                 DB::raw('(SELECT COUNT(user_id) from follow_user where (follow_user.user_follow_id=users.id)) as follow_me '))
                 ->where('users.id', $user_id)
-                ->join('states', 'states.id', '=', 'users.state_id')
-                ->join('towns', 'towns.id', '=', 'users.town_id')
+              /*   ->join('states', 'states.id', '=', 'users.state_id')
+                ->join('towns', 'towns.id', '=', 'users.town_id') */
                 ->join('profile_user', 'profile_user.user_id', '=', 'users.id')
                 ->first();
         }

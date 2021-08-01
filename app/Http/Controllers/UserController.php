@@ -37,6 +37,7 @@ class UserController extends Controller
         $btn_follow = User::btnFollow($id, $my_user_id);
         $keywords   = TitleUser::keywords($title_id);
         $titles     = TitleUser::list($id);
+        
 
         return view('user.show', compact('my_user', 'path', 'userId', 'my_user_id', 'my_socials', 'btn_follow', 'keywords', 'titles'));
     }
@@ -112,7 +113,6 @@ class UserController extends Controller
         $btn_follow = User::btnFollow($id, $my_user_id);
         $keywords   = TitleUser::keywords($title_id);
         $titles     = TitleUser::list($id);
-
 
         return view('user.show', compact('my_user', 'path', 'userId', 'my_user_id', 'my_socials', 'btn_follow', 'keywords', 'titles'));
     }

@@ -35,12 +35,13 @@
             </div>
             <div class="row mt-3">
                 <div class="col-4 col-md-3">
-                    <followed-component followed="{{ (isset($my_user->follows))? $my_user->follows : ''}}" path="{{ '/'.$path }}" my_user_id="{{ $userId }}"></followed-component>
+                    {{-- <followed-component followed="{{ (isset($my_user->follows))? $my_user->follows : ''}}" path="{{ '/'.$path }}" my_user_id="{{ $userId }}"></followed-component> --}}
+                    @livewire('followed-component', ['followed' => (isset($my_user->follows))? $my_user->follows : '', 'path' =>  '/'.$path  , 'my_user_id' =>  $userId  ])
                     {{--<span class="text-muted font-weight-bold">   <span class="text-muted font-weight-normal">Seguidos</span> </span>--}}
                 </div>
                 <div class="col-5 col-md-4"><span class="text-muted font-weight-bold">
-
-                        <followers-component followers="{{ isset($my_user->follow_me)? $my_user->follow_me : ''  }}" path="{{ '/'.$path }}" my_user_id="{{ $userId }}"></followers-component>
+                    @livewire('followers-component', ['followers' => isset($my_user->follow_me)? $my_user->follow_me : '', 'path' => '/'.$path, 'my_user_id' =>  $userId  ])
+                        {{-- <followers-component followers="{{ isset($my_user->follow_me)? $my_user->follow_me : ''  }}" path="{{ '/'.$path }}" my_user_id="{{ $userId }}"></followers-component> --}}
                 </div>
                 <div class="col-3 col-md-3">
                     <a class="pointer" data-toggle="modal" data-target="#hearts">
@@ -415,7 +416,7 @@
 
 @endsection
 
-@livewire('test-component')
+
 
 @section('add_js')
 @if (isset($_GET['recompensa']) &&  $_GET['recompensa'] == true)
