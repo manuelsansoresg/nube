@@ -21,6 +21,9 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('add_css')
+    @push('styles')
+        @livewireStyles
+    @endpush
 </head>
 
 <body>
@@ -135,6 +138,9 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     @yield('add_js')
+    @push('scripts')
+        @livewireScripts
+    @endpush
 </body>
 
 </html>

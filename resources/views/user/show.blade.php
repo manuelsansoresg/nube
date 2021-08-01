@@ -415,8 +415,10 @@
 
 @endsection
 
+@livewire('test-component')
+
 @section('add_js')
-@if ($_GET['recompensa'] == true)
+@if (isset($_GET['recompensa']) &&  $_GET['recompensa'] == true)
 <script>
     openRewards();
 </script>
